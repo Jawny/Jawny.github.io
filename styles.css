@@ -1,0 +1,19 @@
+/* The app list. Colors, type and layout come from Vaultio's stylesheet. */
+@import url("vaultio/styles.css");
+
+.app-list { list-style: none; padding: 0; }
+.app-list > li { margin: 0 0 1rem; }
+
+.app-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.app-card img {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+}
+.app-card h2 { margin: 0 0 0.35rem; font-size: 1.25rem; }
+.app-card div > :last-child { margin-bottom: 0; }

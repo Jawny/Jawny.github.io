@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Support · Vaultio</title>
+  <meta name="description" content="Help with Vaultio: forgotten passcode, Recovery Key, new iPhone, subscriptions and contact.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" width="32" height="32">Vaultio</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html" aria-current="page">Support</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>Support</h1>
+    <p class="lede">Answers to common questions. If you need more help, <a href="#contact">email us</a>.</p>
+
+    <h2 id="access">Passcode and Recovery Key</h2>
+
+    <details id="forgot">
+      <summary>I forgot my passcode</summary>
+      <p>Use your Recovery Key, the 24-character key Vaultio showed you when you created your vault:</p>
+      <ol>
+        <li>On Vaultio's lock screen, tap <kbd>Forgot Passcode?</kbd></li>
+        <li>Enter your Recovery Key. Capital letters, spaces and dashes don't matter.</li>
+        <li>Choose a new 6-digit passcode.</li>
+      </ol>
+      <p>If you've lost both your passcode and your Recovery Key, the vault can't be opened by anyone, including us. Your vault is encrypted with keys only you hold, and there's no server-side reset. To start over, delete Vaultio, which permanently deletes the vault, and install it again.</p>
+    </details>
+
+    <details id="recovery-key">
+      <summary>I lost my Recovery Key, but I can still unlock Vaultio</summary>
+      <p>Make a new one now. In Vaultio, go to <kbd>Settings &gt; Security &gt; Create New Recovery Key</kbd>. Your old key stops working straight away. Write the new key down and keep it somewhere safe, away from your iPhone.</p>
+    </details>
+
+    <details id="lockout">
+      <summary>Why do I have to wait before trying my passcode again?</summary>
+      <p>To slow down guessing, Vaultio adds waits after repeated wrong attempts. The first five wrong passcodes in a row have no delay. After that you wait 1 minute after the sixth, 5 minutes after the seventh, 15 minutes after the eighth, and 1 hour after each one from then on. Wrong Recovery Keys count too. The wait counts down while Vaultio's lock screen is open, and unlocking successfully resets the count.</p>
+    </details>
+
+    <details id="face-id">
+      <summary>Face ID stopped unlocking Vaultio</summary>
+      <p>For your security, Face ID unlock turns itself off when the Face ID or Touch ID settings on your iPhone change, for example when an alternate appearance is added. Unlock with your passcode, then turn it back on in <kbd>Settings &gt; Security &gt; Unlock with Face ID</kbd>.</p>
+    </details>
+
+    <details id="auto-lock">
+      <summary>When does Vaultio lock?</summary>
+      <p>Choose in <kbd>Settings &gt; Security &gt; Auto-Lock</kbd>: <kbd>Immediately</kbd> (the default) or <kbd>After 1 Minute</kbd>. With Immediately, Vaultio locks as soon as you leave it. It always locks when your iPhone locks.</p>
+    </details>
+
+    <h2 id="device">Your iPhone and your data</h2>
+
+    <details id="lost-iphone">
+      <summary>I lost my iPhone, or got a new one. Can I get my vault back?</summary>
+      <p>Not in Vaultio 1.0. To keep your vault private, it's stored only on the iPhone where you created it. It isn't included in iCloud Backup, computer backups or Quick Start transfers, so if that iPhone is lost, stolen, erased or replaced, the vault can't be recovered.</p>
+      <p>Encrypted iCloud backup is planned for a future update. Until then, please keep your own copies of anything you can't afford to lose.</p>
+    </details>
+
+    <details id="new-iphone">
+      <summary>How do I move my items to a new iPhone?</summary>
+      <p>While you still have your old iPhone, export the items you want to keep, then import them into Vaultio on the new iPhone:</p>
+      <ol>
+        <li>On the old iPhone, select items in Vaultio and use <kbd>Share</kbd> (for example, AirDrop them to your new iPhone or save them to Files) or <kbd>Save to Photos</kbd>.</li>
+        <li>On the new iPhone, install Vaultio, create a vault, and import the items from Photos or Files.</li>
+        <li>Delete the unprotected copies you made along the way.</li>
+      </ol>
+      <p>Exported copies aren't encrypted, so do this somewhere private and clean up afterwards.</p>
+    </details>
+
+    <details id="delete-app">
+      <summary>What happens if I delete the app?</summary>
+      <p>Deleting Vaultio permanently deletes your vault and everything in it. Your subscription isn't cancelled automatically; see <a href="#cancel">how to cancel</a>.</p>
+    </details>
+
+    <details id="hidden">
+      <summary>Where can my vault be seen?</summary>
+      <p>Only inside Vaultio, after you unlock it. Vault contents don't appear in the Files app, Spotlight search, iPhone backups or the App Switcher. Vaultio's own icon is still visible on your Home Screen. To hide it, iOS 18 and later let you touch and hold the icon and choose <kbd>Require Face ID</kbd> and then <kbd>Hide and Require Face ID</kbd>.</p>
+    </details>
+
+    <details id="screenshots">
+      <summary>Can Vaultio block screenshots?</summary>
+      <p>No. iOS doesn't let any app prevent screenshots, so be mindful of what's on screen. Vaultio does hide your vault while your screen is being recorded or mirrored, shows a cover in the App Switcher, and locks when you leave the app.</p>
+    </details>
+
+    <details id="files">
+      <summary>What can I store?</summary>
+      <p>Photos, videos, notes and any kind of file. Photos, videos, PDFs, text and notes open directly in Vaultio. Most other files, such as Office documents, open with the iOS preview.</p>
+    </details>
+
+    <h2 id="subscription">Vaultio Plus and subscriptions</h2>
+
+    <details id="free-limit">
+      <summary>What do I get for free, and what does Vaultio Plus add?</summary>
+      <p>Every feature is free for up to 50 items. Vaultio Plus removes the limit. It's $0.99 per month, $7.99 per year, or $19.99 once (US prices; prices elsewhere are shown on the App Store).</p>
+    </details>
+
+    <details id="cancel">
+      <summary>How do I cancel my subscription?</summary>
+      <p>Subscriptions are managed by Apple. On your iPhone:</p>
+      <ol>
+        <li>Open the Settings app and tap your name.</li>
+        <li>Tap <kbd>Subscriptions</kbd>, then <kbd>Vaultio Plus</kbd>.</li>
+        <li>Tap <kbd>Cancel Subscription</kbd>.</li>
+      </ol>
+      <p>While you have an active subscription, you can also get there from Vaultio: <kbd>Settings &gt; Subscription &gt; Manage Subscription</kbd>. Cancel at least 24 hours before your renewal date to avoid the next charge. Vaultio Plus stays active until the end of the period you've paid for. More help: <a href="https://support.apple.com/en-us/118428">Cancel a subscription from Apple</a>.</p>
+    </details>
+
+    <details id="lapsed">
+      <summary>What happens to my vault if my subscription ends?</summary>
+      <p>Nothing is locked away. You can still unlock, view, export and delete everything. You just can't add more items while you're over the free limit of 50.</p>
+    </details>
+
+    <details id="restore">
+      <summary>I bought Vaultio Plus but the app doesn't show it</summary>
+      <p>Make sure you're signed in with the same Apple Account you used to buy it, then go to <kbd>Settings &gt; Subscription &gt; Restore Purchases</kbd> in Vaultio.</p>
+    </details>
+
+    <details id="refund">
+      <summary>How do I get a refund?</summary>
+      <p>Purchases are made through Apple, so Apple handles refunds. Go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, choose <kbd>Request a refund</kbd>, and select Vaultio Plus. More help: <a href="https://support.apple.com/en-us/118223">Request a refund from Apple</a>.</p>
+    </details>
+
+    <h2 id="contact">Contact</h2>
+    <div class="card">
+      <p>Email <a href="mailto:wumbusapps@gmail.com">wumbusapps@gmail.com</a>. We usually reply within 5 business days.</p>
+      <p>Tell us your iPhone model, your iOS version and your Vaultio version (shown in Vaultio's Settings).</p>
+      <p><strong>Never send your passcode, your Recovery Key, or anything from your vault.</strong> We'll never ask for them, and we couldn't use them to help you.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <ul>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="mailto:wumbusapps@gmail.com">Contact</a></li>
+      </ul>
+      <p>This site uses no cookies, no analytics and no third-party resources.</p>
+      <p>&copy; 2026 Johnny Liao.</p>
+    </div>
+  </footer>
+</body>
+</html>
