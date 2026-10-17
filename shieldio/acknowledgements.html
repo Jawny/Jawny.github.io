@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Acknowledgements · Shieldio</title>
+  <meta name="description" content="Credits and licenses for the filter lists Shieldio uses: EasyList, EasyPrivacy and Fanboy's lists, by the EasyList authors.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" width="32" height="32">Shieldio</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="acknowledgements.html" aria-current="page">Acknowledgements</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>Acknowledgements</h1>
+    <p class="lede">Shieldio wouldn't block anything without the volunteers who write and maintain these filter lists. Thank you.</p>
+
+    <!--
+      This is the text from docs/research/FILTER_LISTS.md §4 with <App> = Shieldio. One deliberate
+      change: the Fanboy paragraph is split so that each list the app actually uses (docs/dev/BUILD.md
+      §4.2) has its own source URL and license, because the EasyList Cookie List is downloaded from
+      secure.fanboy.co.nz, where it's published under CC BY 3.0. A second one: the first paragraph
+      mentions Shieldio's own rules (Packages/FilterKit/Sources/FilterKit/OwnRules.swift). The in-app
+      About screen must show the same text.
+    -->
+    <div class="license">
+      <h2 id="filter-lists">Filter lists</h2>
+      <p>Shieldio blocks ads, trackers and annoyances using filter lists written by the EasyList project's volunteers, plus a short list of ad and tracking servers that Shieldio maintains. Shieldio converts these lists into Safari's content-blocking format. Conversion changes their syntax, and rules that Safari can't run are left out. The list authors are not affiliated with Shieldio and do not endorse it.</p>
+
+      <h3 id="easylist">EasyList and EasyPrivacy</h3>
+      <p>&copy; The EasyList authors (<a href="https://easylist.to/">https://easylist.to/</a>). Licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (<a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a>), as permitted by the EasyList licence (<a href="https://easylist.to/pages/licence.html">https://easylist.to/pages/licence.html</a>). Sources: <a href="https://easylist.to/easylist/easylist.txt">https://easylist.to/easylist/easylist.txt</a> and <a href="https://easylist.to/easylist/easyprivacy.txt">https://easylist.to/easylist/easyprivacy.txt</a></p>
+
+      <h3 id="fanboy">Fanboy's Annoyance List and Fanboy's Social List</h3>
+      <p>&copy; The EasyList authors and Fanboy (<a href="https://easylist.to/">https://easylist.to/</a>). Licensed under CC BY-SA 4.0 (<a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a>) as permitted by the EasyList licence; parts are also published under CC BY 3.0 (<a href="https://creativecommons.org/licenses/by/3.0/">https://creativecommons.org/licenses/by/3.0/</a>). Sources: <a href="https://easylist.to/easylist/fanboy-annoyance.txt">https://easylist.to/easylist/fanboy-annoyance.txt</a> and <a href="https://easylist.to/easylist/fanboy-social.txt">https://easylist.to/easylist/fanboy-social.txt</a></p>
+
+      <h3 id="cookie-list">EasyList Cookie List</h3>
+      <p>&copy; The EasyList authors and Fanboy. Licensed under the Creative Commons Attribution 3.0 Unported License (<a href="https://creativecommons.org/licenses/by/3.0/">https://creativecommons.org/licenses/by/3.0/</a>). Source: <a href="https://secure.fanboy.co.nz/fanboy-cookiemonster.txt">https://secure.fanboy.co.nz/fanboy-cookiemonster.txt</a></p>
+
+      <p>Shieldio includes unmodified copies of these lists and converts them into Safari's content-blocking format on your device; rules Safari can't run are left out. The lists are available, free and without DRM, from their publishers at the source addresses above. They are provided "as is", without warranty of any kind. Nothing in the Shieldio license agreement limits your rights under these licenses.</p>
+    </div>
+
+    <h2 id="updates">Where the lists come from</h2>
+    <p>A copy of each list ships with the app. When a list expires, Shieldio downloads the new version from the source address above and converts it on your device. The <a href="privacy.html#downloads">privacy policy</a> describes exactly what those downloads send.</p>
+    <p>If Shieldio blocks too much or too little on a site, please <a href="support.html#contact">tell us</a> first: the problem may be in our conversion rather than in the lists.</p>
+
+    <h2 id="software">Software</h2>
+    <p>Shieldio is built only with Apple's frameworks and our own code. It contains no third-party software libraries.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <ul>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="acknowledgements.html">Acknowledgements</a></li>
+        <li><a href="mailto:wumbusapps@gmail.com">Contact</a></li>
+      </ul>
+      <p>This site uses no cookies, no analytics and no third-party resources.</p>
+      <p>&copy; 2026 Johnny Liao.</p>
+    </div>
+  </footer>
+</body>
+</html>

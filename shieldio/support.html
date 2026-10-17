@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Support · Shieldio</title>
+  <meta name="description" content="Help with Shieldio: turning it on in Settings, fixing a site, what it can't block, list updates and contact.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" width="32" height="32">Shieldio</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html" aria-current="page">Support</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="acknowledgements.html">Acknowledgements</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>Support</h1>
+    <p class="lede">Answers to common questions. If you need more help, <a href="#contact">email us</a>.</p>
+
+    <h2 id="setup">Setting up</h2>
+
+    <details id="turn-on" open>
+      <summary>How do I turn Shieldio on?</summary>
+      <p>Shieldio blocks through Safari's built-in content blocking, so Safari needs your permission once:</p>
+      <ol class="steps">
+        <li>Open the <kbd>Settings</kbd> app and go to <kbd>Apps &gt; Safari &gt; Extensions</kbd>.</li>
+        <li>Open <kbd>Shieldio — Ads</kbd> and turn on <kbd>Allow Extension</kbd>.</li>
+        <li>Do the same for <kbd>Shieldio — Trackers</kbd> and <kbd>Shieldio — Annoyances</kbd>.</li>
+      </ol>
+      <p>On iOS 26.2 and later, the button on Shieldio's setup screen opens this screen for you. When all three are on, Shieldio shows <kbd>Protected</kbd>.</p>
+      <p>If you use Safari profiles, extensions are turned on separately for each profile.</p>
+    </details>
+
+    <details id="greyed-out">
+      <summary>The switches in Settings are greyed out</summary>
+      <p>That usually means Screen Time restrictions are on for this device. Check <kbd>Settings &gt; Screen Time &gt; Content &amp; Privacy Restrictions</kbd>, or ask whoever manages the device. A managed (work or school) device may also block extensions.</p>
+    </details>
+
+    <details id="still-setup">
+      <summary>Shieldio still says "Finish Setup"</summary>
+      <p>Shieldio checks each of its three extensions every time you open it. Make sure all three are turned on (see <a href="#turn-on">above</a>), then switch back to Shieldio. Each extension blocks a different kind of thing, so with one off, that kind gets through.</p>
+    </details>
+
+    <details id="open-app">
+      <summary>Do I need to keep Shieldio open?</summary>
+      <p>No. Once the extensions are on, Safari does the blocking by itself. Open Shieldio only to change what's blocked or to check for list updates.</p>
+    </details>
+
+    <h2 id="sites">Websites</h2>
+
+    <details id="one-site">
+      <summary>A website doesn't work properly. How do I turn blocking off for it?</summary>
+      <p>Use Safari's own controls. They work for every content blocker, Shieldio included:</p>
+      <ul>
+        <li><strong>Just this time:</strong> on the page, tap the page menu button at the left of the address bar, then <kbd>Turn Off Content Blockers</kbd>. The page reloads without blocking until you close the tab.</li>
+        <li><strong>Always, for this site:</strong> in the same menu, open <kbd>Website Settings</kbd> and turn off <kbd>Use Content Blockers</kbd>.</li>
+      </ul>
+      <p>To undo the second one later, go to <kbd>Settings &gt; Apps &gt; Safari</kbd> and look under the per-website settings for content blockers. The exact names of these buttons vary a little between iOS versions.</p>
+      <p>Please also <a href="#contact">tell us about the site</a> (in Shieldio, <kbd>Help &gt; Report a Broken Site</kbd> fills in the details), so the list maintainers can fix it for everyone.</p>
+    </details>
+
+    <details id="cookies">
+      <summary>What happens to cookie notices?</summary>
+      <p>With <kbd>Cookie Notices</kbd> on, Shieldio hides cookie and consent banners. Hiding a banner doesn't accept or reject anything: the site just doesn't get an answer. A few sites won't load until you answer; turn blocking off for that site, or turn <kbd>Cookie Notices</kbd> off.</p>
+    </details>
+
+    <details id="social">
+      <summary>Why is Social Widgets off by default?</summary>
+      <p>It hides like and share buttons and embedded posts from social networks. Many pages show their main content in those embeds, so blocking them by default would break pages people want to read. Turn it on in Shieldio if you'd rather not see them.</p>
+    </details>
+
+    <details id="detect">
+      <summary>A site asks me to turn off my ad blocker</summary>
+      <p>Some sites check for ad blockers and refuse to show their content. You can turn blocking off for that site (<a href="#one-site">see above</a>), or leave.</p>
+    </details>
+
+    <h2 id="limits">What Shieldio can't do</h2>
+
+    <details id="youtube">
+      <summary>Why do I still see ads in YouTube videos?</summary>
+      <p>Video ads on YouTube come from the same servers as the videos, so a content blocker can't tell them apart and can't remove them without breaking playback. Blocking them needs a different kind of Safari extension, one that can read and change every page, which Shieldio deliberately doesn't use.</p>
+    </details>
+
+    <details id="other-browsers">
+      <summary>Does it work in Chrome, Firefox or other browsers?</summary>
+      <p>No. iOS lets only Safari, and the Safari view that other apps can use to show web pages, apply content blockers. Other browsers and apps' own built-in browsers can't use them.</p>
+    </details>
+
+    <details id="apps">
+      <summary>Does it block ads inside apps?</summary>
+      <p>No. Ads inside apps and games don't go through Safari. Links that an app opens in Safari's viewer (it looks like Safari, with a <kbd>Done</kbd> button) are covered; pages shown in an app's own browser are not.</p>
+    </details>
+
+    <h2 id="updates">Filter list updates</h2>
+
+    <details id="how-updates">
+      <summary>How do the lists stay up to date?</summary>
+      <p>Most of Shieldio's rules come from public filter lists maintained by the EasyList project. When a list expires (every 4 to 9 days), Shieldio downloads the new version straight from its maintainers and converts it on your device. This happens when you open Shieldio and, when iOS allows, in the background. <kbd>Check for Updates</kbd> in Shieldio does it right away.</p>
+      <p>After an update, Safari takes a few seconds to load the new rules.</p>
+    </details>
+
+    <details id="no-network">
+      <summary>Can I stop Shieldio from going online?</summary>
+      <p>Yes. Turn off <kbd>Automatic Updates</kbd> in Shieldio. It then makes no network requests unless you tap <kbd>Check for Updates</kbd>. Blocking keeps working with the lists you have; they just get older. The <a href="privacy.html#downloads">privacy policy</a> lists exactly what a download sends.</p>
+    </details>
+
+    <details id="battery">
+      <summary>Does Shieldio slow down Safari or use battery?</summary>
+      <p>Blocking happens inside Safari, with no VPN and no app running while you browse. Pages usually load faster, because ads and trackers aren't downloaded. Shieldio itself only runs briefly when you open it or when iOS lets it refresh its lists.</p>
+    </details>
+
+    <h2 id="purchase">Your purchase</h2>
+
+    <details id="new-device">
+      <summary>I got a new iPhone or iPad. Do I have to buy Shieldio again?</summary>
+      <p>No. Sign in with the same Apple Account, find Shieldio in the App Store and download it again. Then turn on its extensions on the new device (<a href="#turn-on">see above</a>).</p>
+    </details>
+
+    <details id="refund">
+      <summary>How do I get a refund?</summary>
+      <p>Purchases are made through Apple, so Apple handles refunds. Go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, choose <kbd>Request a refund</kbd>, and select Shieldio. More help: <a href="https://support.apple.com/en-us/118223">Request a refund from Apple</a>.</p>
+    </details>
+
+    <h2 id="contact">Contact</h2>
+    <div class="card">
+      <p>Email <a href="mailto:wumbusapps@gmail.com">wumbusapps@gmail.com</a>. We usually reply within 5 business days.</p>
+      <p>Tell us your device, your iOS version and your Shieldio version (shown in Shieldio's About screen). For a site that doesn't work, include its address and what goes wrong. In Shieldio, <kbd>Help &gt; Report a Broken Site</kbd> starts this email for you.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <ul>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="acknowledgements.html">Acknowledgements</a></li>
+        <li><a href="mailto:wumbusapps@gmail.com">Contact</a></li>
+      </ul>
+      <p>This site uses no cookies, no analytics and no third-party resources.</p>
+      <p>&copy; 2026 Johnny Liao.</p>
+    </div>
+  </footer>
+</body>
+</html>
