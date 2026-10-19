@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Wandery: travel days and map for iPhone</title>
+  <meta name="description" content="Wandery counts every day you spend in each country and US state, automatically, for 183-day limits, Schengen 90/180 and more, and turns it into a map of everywhere you've been. No account, no data collected.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="./"><img src="assets/icon-64.png" alt="" width="32" height="32">Wandery</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="./" aria-current="page">Home</a></li>
+          <li><a href="support/">Support</a></li>
+          <li><a href="privacy/">Privacy</a></li>
+          <li><a href="terms/">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <img src="assets/icon-256.png" alt="Wandery app icon: a flight's arc across a soft globe" width="128" height="128">
+      <div>
+        <h1 id="title">Wandery</h1>
+        <p class="lede">Every day you spend in each country and US state, counted automatically for the day-count rules that tax and immigration care about, and turned into a map of everywhere you've been. On your iPhone, with no account.</p>
+        <p class="meta">Coming soon to the App Store.</p>
+      </div>
+    </section>
+
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Fills itself in</h3>
+        <p>On first launch, Wandery reads the date and place saved with your photos to find where you've been in past years. After that, iOS tells it when you arrive somewhere new, so new days count without you opening the app.</p>
+      </div>
+      <div class="card">
+        <h3>Counts against your limits</h3>
+        <p>See how many days you've spent in each country, US state and Canadian province, and how many are left under a limit such as 183 days or Schengen's 90 in 180.</p>
+      </div>
+      <div class="card">
+        <h3>Your passport</h3>
+        <p>A map that becomes a globe as you zoom out, your trips and likely flights, lifetime stats, and Year in Review and trip cards to share.</p>
+      </div>
+    </div>
+
+    <h2>The rules</h2>
+    <p>With Wandery Plus, you can follow these rules. Each counts days the way its official source describes, and names that source.</p>
+    <ul>
+      <li><strong>A day limit for any country, state or province:</strong> 183 days by default, in a calendar year or the last 12 months, counting any part of a day or only where you were at midnight. Places count days differently, so you choose.</li>
+      <li><strong>Schengen 90/180:</strong> no more than 90 days in any 180-day period, counting the days you enter and leave (EU Regulation 2016/399).</li>
+      <li><strong>The US substantial presence test:</strong> 31 days this year and 183 weighted days over three years (IRS Publication 519).</li>
+      <li><strong>Trips outside the US:</strong> the trips of 24 hours or more over the last 5 years (or 3) that the US citizenship form N-400 asks you to list (USCIS).</li>
+    </ul>
+    <p>Wandery warns you before you reach a limit, and makes an evidence PDF for each rule: a summary, then every day in the window, where it was spent and how it was recorded.</p>
+
+    <h2>Private by design</h2>
+    <ul>
+      <li><strong>No account.</strong> Nothing to sign up for.</li>
+      <li><strong>Your location history stays yours.</strong> Places are looked up on your iPhone, using maps built into the app. Your records sync only through your own private iCloud, so a new iPhone keeps your history. We can't see them.</li>
+      <li><strong>Your photos stay where they are.</strong> Wandery reads only the date and place saved with each photo. It never uploads or changes your photos.</li>
+      <li><strong>No ads, no analytics, no tracking,</strong> and no third-party code. The App Store privacy label is "Data Not Collected". <a href="privacy/">Read the privacy policy.</a></li>
+    </ul>
+
+    <h2>Good to know before you start</h2>
+    <div class="note">
+      <ul>
+        <li><strong>Automatic counting needs Location set to Always.</strong> Wandery uses the low-power location events iOS already notices (moving about 500 meters, or arriving at or leaving a place), not continuous GPS. A visit of only a few minutes across a border may be missed.</li>
+        <li><strong>Unknown days are never guessed.</strong> If your iPhone is off, Location Services are off, or iOS doesn't wake Wandery, those days show as unknown until you fill them in, which takes one tap.</li>
+        <li><strong>Photos fill in the past only</strong>, and only where your photos have a location.</li>
+        <li><strong>A record, not advice.</strong> Wandery counts days and shows thresholds. It isn't tax, immigration or legal advice, and it never says whether you're a resident or what you owe. Check with a qualified professional before relying on a count.</li>
+        <li><strong>iPhone only</strong> for now. Wandery requires iOS 18 or later.</li>
+      </ul>
+    </div>
+
+    <h2>Pricing</h2>
+    <p>This year and last year are free, with automatic counting, the photo scan, the map, trips, stats, day counts, Year in Review, the today widget and CSV export. Older years your photos found are kept and shown on the map, dimmed, never deleted.</p>
+    <ul class="price-list">
+      <li><strong>Free</strong> this year and last year</li>
+      <li><strong>$14.99</strong> once, for Wandery Plus</li>
+    </ul>
+    <p>Wandery Plus is a one-time purchase, not a subscription. It unlocks every older year (and its export), the rules, limit warnings, evidence PDFs and rule widgets.</p>
+    <p class="meta">US price. Prices in other countries and regions are set by the App Store and may include tax.</p>
+
+    <h2 id="credits">Credits</h2>
+    <p>Borders: made with Natural Earth, free vector and raster map data at <a href="https://www.naturalearthdata.com/">naturalearthdata.com</a> (public domain). Airports: <a href="https://ourairports.com/data/">OurAirports</a> (public domain). Time zones: the <a href="https://www.iana.org/time-zones">tz database</a> (public domain). Thank you to everyone who maintains them.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <ul>
+        <li><a href="support/">Support</a></li>
+        <li><a href="privacy/">Privacy Policy</a></li>
+        <li><a href="terms/">Terms of Use</a></li>
+        <li><a href="mailto:wumbusapps@gmail.com">Contact</a></li>
+      </ul>
+      <p>This site uses no cookies, no analytics and no third-party resources.</p>
+      <p>&copy; 2026 Johnny Liao. App Store is a service mark of Apple Inc.</p>
+    </div>
+  </footer>
+</body>
+</html>

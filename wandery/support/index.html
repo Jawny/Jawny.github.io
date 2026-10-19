@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Support · Wandery</title>
+  <meta name="description" content="Help with Wandery: location permission, unknown days, the photo scan, the rules, iCloud and a new iPhone, Wandery Plus and contact.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="../"><img src="../assets/icon-64.png" alt="" width="32" height="32">Wandery</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="./" aria-current="page">Support</a></li>
+          <li><a href="../privacy/">Privacy</a></li>
+          <li><a href="../terms/">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>Support</h1>
+    <p class="lede">Answers to common questions. If you need more help, <a href="#contact">email us</a>.</p>
+
+    <!-- In-app labels below (Settings, Days, Scan Photos Again, Delete All Data…) were checked against
+         the app on 2026-10-18. Check them again whenever a label changes (site/README.md). -->
+
+    <h2 id="counting">How Wandery counts your days</h2>
+
+    <details id="how">
+      <summary>How does Wandery know where I've been?</summary>
+      <p>From three places, all on your iPhone:</p>
+      <ul>
+        <li><strong>Your location, going forward.</strong> With Location set to Always, iOS tells Wandery when you've moved a significant distance or arrived at or left a place. Wandery looks up which country, state or province that is, using maps built into the app, and notes the day and time.</li>
+        <li><strong>Your photos, for the past.</strong> Wandery reads the date and place saved with each photo in your library to find where you were before you installed it.</li>
+        <li><strong>You.</strong> You can add a flight from its boarding pass or by hand, answer Wandery's questions with one tap, or set any day by hand.</li>
+      </ul>
+      <p>Each day shows how it was recorded. A day set by you always wins.</p>
+    </details>
+
+    <details id="always">
+      <summary>Why does Wandery need Location set to Always? What about my battery?</summary>
+      <p>To count a day, Wandery needs to know where you were that day, including days you don't open the app. Only "Always" lets iOS wake Wandery when you arrive somewhere new.</p>
+      <p>Wandery doesn't run GPS in the background. It uses the low-power location events iOS already notices: moving about 500 meters or more, or arriving at or leaving a place. At home that's close to no activity at all; a travel day is a handful of short wake-ups.</p>
+      <p>To turn it on: open the Settings app, tap <kbd>Apps</kbd>, then <kbd>Wandery</kbd> &gt; <kbd>Location</kbd>, choose <kbd>Always</kbd>, and turn on <kbd>Precise Location</kbd>. With approximate location, places near a border can be wrong.</p>
+    </details>
+
+    <details id="unknown">
+      <summary>Why are some days unknown?</summary>
+      <p>Wandery never guesses a day. A day is unknown when there's nothing to go on: your iPhone was off, Location Services were off, iOS didn't wake Wandery, or (before you installed it) you took no photos with a location that day.</p>
+      <p>Each unknown stretch becomes one question, for example "Where were you May 2 – 4?" At the top of <kbd>Days</kbd>, tap <kbd>Review Questions</kbd> to answer them one card at a time, usually with one tap, or open a day and set it by hand. Rules show how many unknown days fall in their window, because the count could be that much higher.</p>
+    </details>
+
+    <details id="likely">
+      <summary>What does "likely" mean?</summary>
+      <p>Before you installed Wandery, the only evidence is your photos. If two photo days in the same place have days without photos between them, those days are filled as that place and marked "likely". Days between photos in different places stay unknown. Flights that Wandery works out from two far-apart places within hours are also "likely" until you confirm them: tap the flight and choose <kbd>Flew</kbd> or <kbd>Didn't Fly</kbd>, or add it from its boarding pass or by hand.</p>
+    </details>
+
+    <details id="wrong">
+      <summary>A day is wrong. How do I fix it?</summary>
+      <p>Open <kbd>Days</kbd>, tap the day, and tap <kbd>Edit</kbd> to set where you were. Your choice replaces everything else recorded for that day, and every count, map and report updates.</p>
+      <p>Common causes: a photo someone AirDropped to you keeps the sender's location (Wandery marks lone outliers as unconfirmed, but not every case can be caught); and if you share an iCloud Shared Photo Library, a photo another person took on a trip without you can look like your trip. Shared albums are never read.</p>
+    </details>
+
+    <details id="short-visit">
+      <summary>A short trip across a border wasn't counted</summary>
+      <p>iOS reports a move after roughly 500 meters and no more often than about every 5 minutes, so a visit of only a few minutes can be missed. Add the day by hand in <kbd>Days</kbd>.</p>
+    </details>
+
+    <details id="midnight">
+      <summary>How do days count when I travel, or cross midnight in another time zone?</summary>
+      <p>Every day is the local date where you were. A day you travel counts for each place you were in that day. Rules differ on what counts as a day, so each one follows its source: Schengen and the US substantial presence test count any part of a day, and for your own day limits you choose between "any part of the day" and "present at midnight". For the N-400 list, the days you leave and return count as days in the US, as USCIS counts them.</p>
+    </details>
+
+    <h2 id="photos">The photo scan</h2>
+
+    <details id="photo-read">
+      <summary>What does Wandery read from my photos?</summary>
+      <p>Only the date, the place and the altitude saved with each photo, and whether it's a screenshot (screenshots are skipped; photos taken from a plane are left out). Wandery doesn't look at the pictures themselves, doesn't download photos from iCloud, and never uploads or changes anything.</p>
+    </details>
+
+    <details id="limited">
+      <summary>I gave access to selected photos only</summary>
+      <p>Then Wandery reads only those photos, and says so. To let it read your whole library, open the Settings app, tap <kbd>Apps</kbd> &gt; <kbd>Wandery</kbd> &gt; <kbd>Photos</kbd>, choose <kbd>Full Access</kbd>, then in Wandery tap <kbd>Settings</kbd> &gt; <kbd>Scan Photos Again</kbd>.</p>
+    </details>
+
+    <details id="no-photos">
+      <summary>I don't want Wandery to read my photos at all</summary>
+      <p>Skip that step, or choose <kbd>Don't Allow</kbd>. Wandery still counts days from your location going forward, and you can add past days by hand.</p>
+    </details>
+
+    <h2 id="rules">Rules and reports</h2>
+
+    <details id="advice">
+      <summary>Is Wandery tax or immigration advice?</summary>
+      <p>No. Wandery is a record of days. It counts them and shows how they compare with a threshold, following each rule's official source, but it never says whether you're a resident, whether you qualify for anything, or what you owe. Tax and immigration rules have exceptions that depend on your situation (exempt days, treaties, what counts as a home). Please check with a qualified professional before relying on a count.</p>
+    </details>
+
+    <details id="sources">
+      <summary>Which sources do the rules follow?</summary>
+      <ul>
+        <li><strong>Schengen 90/180:</strong> Regulation (EU) 2016/399, Article 6(1). Entry and exit days count. Results were checked against the European Commission's short-stay calculator.</li>
+        <li><strong>US substantial presence test:</strong> IRS Publication 519 and 26 U.S.C. §7701(b)(3). Any part of a day counts. Some days don't count for some people (for example, days as an exempt individual or in transit between two foreign places); Wandery 1.0 doesn't subtract those for you.</li>
+        <li><strong>Trips outside the US:</strong> USCIS Form N-400, which asks for trips of 24 hours or longer.</li>
+        <li><strong>Day limits:</strong> set by you, because places define them differently.</li>
+      </ul>
+      <p>Each rule shows its source in the app. If you think a rule counts something wrong, please <a href="#contact">tell us</a>, with the dates involved.</p>
+    </details>
+
+    <details id="pdf">
+      <summary>What's in an evidence PDF?</summary>
+      <p>A summary of the rule's count, then every day in its window: the date, where you were, and how that day was recorded (location, photo, a flight you added, or by hand). The N-400 report lists each trip with its dates, countries and days outside the US. PDFs are made on your iPhone and shared wherever you choose.</p>
+    </details>
+
+    <h2 id="data">Your data and your iPhones</h2>
+
+    <details id="new-iphone">
+      <summary>I got a new iPhone. Will my history come with me?</summary>
+      <p>Yes, if you're signed in to iCloud with the same Apple Account. Wandery keeps your records in your own private iCloud, so they appear on the new iPhone after you install Wandery. Then turn on location for Wandery on the new iPhone: it asks as you set it up, or use the Location section of Wandery's <kbd>Settings</kbd>.</p>
+      <p>If iCloud is off for Wandery (Settings app &gt; your name &gt; <kbd>iCloud</kbd>), your history stays only on the iPhone where it was recorded. Export a CSV first if you're moving without iCloud.</p>
+    </details>
+
+    <details id="two-iphones">
+      <summary>I have two iPhones. Which one counts?</summary>
+      <p>Only one iPhone records your location at a time: the one where you most recently turned on location in Wandery. Your other iPhones show the same synced history, so a phone left at home can't record home while you travel. To switch, open Wandery's <kbd>Settings</kbd> on the other iPhone and tap <kbd>Record on This iPhone Instead</kbd>.</p>
+    </details>
+
+    <details id="export">
+      <summary>How do I export my days?</summary>
+      <p>In Wandery, tap <kbd>Settings</kbd> &gt; <kbd>Export Days as CSV</kbd>. The file has one row per day and place: the date, the country, the state or province, whether you were there at midnight, and how the day was recorded. Free exports cover this year and last year; Wandery Plus exports every year.</p>
+    </details>
+
+    <details id="delete">
+      <summary>How do I delete my data?</summary>
+      <p>In Wandery, tap <kbd>Settings</kbd> &gt; <kbd>Delete All Data</kbd>. This deletes your records on this iPhone and, through iCloud, on your other devices. Deleting the app removes the copy on this iPhone; the copy in your iCloud stays until you delete it in Wandery or in the Settings app under your name &gt; <kbd>iCloud</kbd> &gt; storage &gt; <kbd>Wandery</kbd>.</p>
+    </details>
+
+    <h2 id="plus">Wandery Plus</h2>
+
+    <details id="free-plus">
+      <summary>What's free, and what does Wandery Plus add?</summary>
+      <p>Free: everything for this year and last year, including automatic counting, the photo scan, the map, trips, stats, day counts, Year in Review, the today widget and CSV export. Older years your photos found stay on the map, dimmed.</p>
+      <p>Wandery Plus, a one-time purchase of $14.99 (US price; other prices are shown on the App Store), unlocks every older year and its export, the rules, limit warnings, evidence PDFs and rule widgets. It's not a subscription.</p>
+    </details>
+
+    <details id="restore">
+      <summary>I bought Wandery Plus, but the app doesn't show it</summary>
+      <p>Make sure you're signed in with the Apple Account you used to buy it, then tap <kbd>Settings</kbd> &gt; <kbd>Restore Purchases</kbd> in Wandery. Wandery Plus isn't shared through Family Sharing.</p>
+    </details>
+
+    <details id="refund">
+      <summary>How do I get a refund?</summary>
+      <p>Purchases are made through Apple, so Apple handles refunds. Go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, choose <kbd>Request a refund</kbd>, and select Wandery Plus. More help: <a href="https://support.apple.com/en-us/118223">Request a refund from Apple</a>.</p>
+    </details>
+
+    <h2 id="contact">Contact</h2>
+    <div class="card">
+      <p>Email <a href="mailto:wumbusapps@gmail.com">wumbusapps@gmail.com</a>. We usually reply within 5 business days.</p>
+      <p>Tell us your iPhone model, your iOS version and your Wandery version (shown in Wandery's Settings). If a day or a rule looks wrong, include the dates and the places involved.</p>
+      <p><strong>Please don't send your whole travel history or exported files unless we ask</strong>: we only need the dates in question, and we'd rather not hold more of your data than that.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <ul>
+        <li><a href="./">Support</a></li>
+        <li><a href="../privacy/">Privacy Policy</a></li>
+        <li><a href="../terms/">Terms of Use</a></li>
+        <li><a href="mailto:wumbusapps@gmail.com">Contact</a></li>
+      </ul>
+      <p>This site uses no cookies, no analytics and no third-party resources.</p>
+      <p>&copy; 2026 Johnny Liao.</p>
+    </div>
+  </footer>
+</body>
+</html>
