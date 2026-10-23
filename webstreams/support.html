@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Support · Web Streams for AirPlay</title>
+  <meta name="description" content="Help with Web Streams: turning it on in Settings and for a site, the TV button, only the sound on the TV, protected videos, and contact.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" width="32" height="32">Web Streams</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html" aria-current="page">Support</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>Support</h1>
+    <p class="lede">Answers to common questions. If you need more help, <a href="#contact">email us</a>.</p>
+
+    <h2 id="setup">Setting up</h2>
+
+    <details id="turn-on" open>
+      <summary>How do I turn Web Streams on?</summary>
+      <p>Web Streams works through its Safari extension, called Streams. Safari needs your permission once:</p>
+      <ol class="steps">
+        <li>Open the <kbd>Settings</kbd> app and go to <kbd>Apps &gt; Safari &gt; Extensions &gt; Streams</kbd>.</li>
+        <li>Turn on <kbd>Allow Extension</kbd>.</li>
+        <li>Then turn it on for the sites you want (<a href="#site">next question</a>).</li>
+      </ol>
+      <p>On iOS 26.2 and later, the <kbd>Open Safari Settings</kbd> button in the app opens this screen for you, and the app shows when Streams is on.</p>
+      <p>If you use Safari profiles, extensions are turned on separately for each profile. In Private Browsing, extensions stay off unless you turn on <kbd>Allow in Private Browsing</kbd> on the same Settings screen.</p>
+    </details>
+
+    <details id="site">
+      <summary>How do I turn it on for a website?</summary>
+      <ol class="steps">
+        <li>In Safari, open the website with the video.</li>
+        <li>Tap the page menu button at the left of the address bar, then <kbd>Streams</kbd>.</li>
+        <li>Tap <kbd>Turn on for</kbd> and the site's name, for example <kbd>Turn on for example.com</kbd>. Allow it when Safari asks. The page reloads, and the TV button appears on its videos.</li>
+      </ol>
+      <p>If the site plays its videos in a player from another website, Streams asks for that one too, in the same step. From then on, the site works without asking.</p>
+    </details>
+
+    <details id="all-sites">
+      <summary>Can I turn it on for every website at once?</summary>
+      <p>Yes. In the same menu, tap <kbd>Use on all websites</kbd>, or in <kbd>Settings &gt; Apps &gt; Safari &gt; Extensions &gt; Streams</kbd>, set <kbd>All Websites</kbd> to <kbd>Allow</kbd>. Safari then says the extension can read and alter webpages you visit. Streams uses that only to find videos and put its button on them, and nothing leaves your phone. We recommend turning it on site by site, which is the default.</p>
+    </details>
+
+    <details id="turn-off">
+      <summary>How do I turn it off for a site?</summary>
+      <p>On that site, tap the page menu button, then <kbd>Streams</kbd>, then <kbd>Turn off for this site</kbd>. Or change the site to <kbd>Deny</kbd> in <kbd>Settings &gt; Apps &gt; Safari &gt; Extensions &gt; Streams</kbd>.</p>
+    </details>
+
+    <details id="greyed-out">
+      <summary>The switches in Settings are greyed out</summary>
+      <p>That usually means Screen Time restrictions are on for this device. Check <kbd>Settings &gt; Screen Time &gt; Content &amp; Privacy Restrictions</kbd>, or ask whoever manages the device. A work or school device may also block extensions.</p>
+    </details>
+
+    <details id="no-button">
+      <summary>There's no TV button on the video</summary>
+      <ul>
+        <li>Check that Streams is on for the site (<a href="#site">see above</a>).</li>
+        <li>Reload the page. Streams starts with the page, so a page that was already open before you turned it on, or before an update, needs a reload.</li>
+        <li>Very small videos don't get a button.</li>
+        <li>If the video is full screen, leave full screen: Safari hides everything on the page there, the button included.</li>
+      </ul>
+    </details>
+
+    <h2 id="tv">Sending to the TV</h2>
+
+    <details id="tv-missing">
+      <summary>My TV isn't in the list</summary>
+      <p>Your iPhone and your TV need to be on the same Wi-Fi network, and the TV needs to be on. On an Apple TV, check <kbd>Settings &gt; AirPlay and HomeKit</kbd>. Open Control Center on your iPhone to see whether AirPlay finds the TV at all. A VPN on the phone can also hide the TV.</p>
+    </details>
+
+    <details id="only-sound">
+      <summary>The TV plays only the sound</summary>
+      <p>Some video players keep sending only the sound, even after Streams turns AirPlay on. When that happens, the TV button changes to <kbd>Only sound on TV: play in Streams</kbd>. Tap it, then <kbd>Open</kbd> when Safari asks. The app opens the video in its own player and sends it to the TV, and you can lock your iPhone while it plays.</p>
+    </details>
+
+    <details id="protected">
+      <summary>The button says "Protected video"</summary>
+      <p>The video is copy-protected (DRM), as on most paid subscription services. Web Streams leaves protected videos alone. Use the service's own app on your TV, or its own AirPlay button if it has one.</p>
+    </details>
+
+    <details id="cant-send">
+      <summary>The button says "Can't send this video"</summary>
+      <p>The site plays the video in a format the TV can't play over AirPlay. There's nothing Web Streams can switch on for it.</p>
+    </details>
+
+    <details id="tv-error">
+      <summary>The TV shows an error, or nothing happens</summary>
+      <p>The TV gets the video straight from the website. Some websites only send their videos to the browser that opened the page, and refuse the TV. There's no way around that in this version. If you think a site should work, <a href="#contact">tell us</a> which one and what happened.</p>
+    </details>
+
+    <details id="sites-off">
+      <summary>Does it work with YouTube?</summary>
+      <p>No. YouTube switches AirPlay off in Safari on purpose and keeps the address of its video out of the page, so there's nothing for Web Streams to send. The YouTube app has its own AirPlay button, and there's a YouTube app for Apple TV. Videos on other sites that do the same can't be sent either.</p>
+    </details>
+
+    <details id="lock">
+      <summary>Can I lock my phone or use other apps while the TV plays?</summary>
+      <p>Yes. That's the point: the TV plays the video itself, not a copy of your screen. If you used <kbd>Play in Streams</kbd>, the app keeps the video going on the TV while the phone is locked.</p>
+    </details>
+
+    <details id="stop">
+      <summary>How do I stop playing on the TV?</summary>
+      <p>Tap the TV button on the video (it reads <kbd>On TV</kbd>) and choose your iPhone in the AirPlay menu. Or open Control Center, touch and hold the playing video's controls, tap the AirPlay button and choose your iPhone. The TV's remote stops it too.</p>
+    </details>
+
+    <details id="other-tvs">
+      <summary>Does it work with Chromecast, Roku or Fire TV?</summary>
+      <p>No. Web Streams uses AirPlay, so it works with Apple TV and with smart TVs that support AirPlay. Many recent smart TVs do; check your TV's settings for AirPlay.</p>
+    </details>
+
+    <details id="download">
+      <summary>Can it save or record videos?</summary>
+      <p>No. Web Streams only sends the video that's playing to your TV. It never saves, records or converts anything.</p>
+    </details>
+
+    <details id="ipad">
+      <summary>Does it work on iPad or Mac?</summary>
+      <p>Not in this version. Web Streams is made for iPhone.</p>
+    </details>
+
+    <h2 id="purchase">Your purchase</h2>
+
+    <details id="new-device">
+      <summary>I got a new iPhone. Do I have to buy Web Streams again?</summary>
+      <p>No. Sign in with the same Apple Account, find Web Streams in the App Store and download it again. Then turn its extension on again on the new iPhone (<a href="#turn-on">see above</a>).</p>
+    </details>
+
+    <details id="refund">
+      <summary>How do I get a refund?</summary>
+      <p>Purchases are made through Apple, so Apple handles refunds. Go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, choose <kbd>Request a refund</kbd>, and select Web Streams. More help: <a href="https://support.apple.com/en-us/118223">Request a refund from Apple</a>.</p>
+    </details>
+
+    <h2 id="contact">Contact</h2>
+    <div class="card">
+      <p>Email <a href="mailto:wumbusapps@gmail.com">wumbusapps@gmail.com</a>. We usually reply within 5 business days.</p>
+      <p>Tell us your iPhone model, your iOS version, your Web Streams version (shown in the app's About screen) and your TV. For a site that doesn't work, include its address and what goes wrong. In the app, <kbd>Help &gt; Email Support</kbd> starts this email for you.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <ul>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:wumbusapps@gmail.com">Contact</a></li>
+      </ul>
+      <p>This site uses no cookies, no analytics and no third-party resources.</p>
+      <p>&copy; 2026 Johnny Liao. Apple, AirPlay, Apple TV, iPhone and Safari are trademarks of Apple Inc., registered in the U.S. and other countries. Web Streams for AirPlay is not affiliated with or endorsed by Apple Inc. App Store is a service mark of Apple Inc. YouTube is a trademark of Google LLC. Other names are trademarks of their owners.</p>
+    </div>
+  </footer>
+</body>
+</html>
